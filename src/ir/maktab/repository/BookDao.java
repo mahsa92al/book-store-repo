@@ -13,6 +13,4 @@ public class BookDao extends BaseDao{
         connection = getConnection();
     }
 
-    public void updateAllBooksSoldTotalPrice() {
-    }
 }
