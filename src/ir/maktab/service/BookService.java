@@ -16,4 +16,6 @@ public class BookService {
         bookDao = new BookDao();
     }
 
+    public void getBooksInfo() {
+    }
 }

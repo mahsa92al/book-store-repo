@@ -34,6 +34,7 @@ public class Main {
     }
 
     private static void viewBooksInfo() {
+        bookService.getBooksInfo();
     }
 
     private static boolean isNumeric(String choice) {
