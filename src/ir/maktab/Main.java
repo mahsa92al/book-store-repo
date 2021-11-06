@@ -2,6 +2,7 @@ package ir.maktab;
 
 import ir.maktab.service.BookService;
 
+import java.sql.SQLException;
 import java.util.Scanner;
 
 /**
@@ -11,7 +12,7 @@ public class Main {
     private static final Scanner scanner = new Scanner(System.in);
     private static BookService bookService;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException, ClassNotFoundException {
         bookService = new BookService();
         int choiceNumber;
         do{
