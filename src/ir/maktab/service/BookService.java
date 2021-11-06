@@ -16,7 +16,4 @@ public class BookService {
         bookDao = new BookDao();
     }
 
-    public void calculateAllBooksSoldTotalPrice() {
-        bookDao.updateAllBooksSoldTotalPrice();
-    }
 }
