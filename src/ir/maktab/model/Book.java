@@ -76,4 +76,16 @@ public class Book {
     public void setSoldTotalPrice(long soldTotalPrice) {
         this.soldTotalPrice = soldTotalPrice;
     }
+
+    @Override
+    public String toString() {
+        return
+                 authorName + '\'' +
+                 isbn + '\'' +
+                 bookTitle + '\'' +
+                 publishedYear +
+                 price +
+                 soldNumber +
+                 soldTotalPrice;
+    }
 }
