@@ -34,7 +34,6 @@ public class Main {
     }
 
     private static void viewBooksInfo() {
-        bookService.calculateAllBooksSoldTotalPrice();
     }
 
     private static boolean isNumeric(String choice) {
