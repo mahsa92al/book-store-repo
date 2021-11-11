@@ -22,7 +22,7 @@ public class BookDao extends BaseDao{
 
     public List<Book> findBooksInfo() throws SQLException {
         Statement statement = connection.createStatement();
-        ResultSet resultSet = statement.executeQuery("select * from book_store");
+        ResultSet resultSet = statement.executeQuery("select * from books");
         List<Book> books = new ArrayList<>();
         while (resultSet.next()){
             Book book = new Book();
