@@ -3,7 +3,7 @@ package ir.maktab.model;
 /**
  * @author Mahsa Alikhani m-58
  */
-public class Book {
+public class Book implements Comparable<Book>{
     private int id;
     private String authorName;
     private String isbn;
@@ -80,12 +80,16 @@ public class Book {
     @Override
     public String toString() {
         return
-                 authorName + '\'' +
-                 isbn + '\'' +
-                 bookTitle + '\'' +
-                 publishedYear +
-                 price +
-                 soldNumber +
+                 isbn + "\t\t" +
+                 bookTitle + "\t\t\t\t" +
+                 publishedYear + "\t\t\t" +
+                 price + "\t\t\t" +
+                 soldNumber + "\t\t\t\t" +
                  soldTotalPrice;
+    }
+
+    @Override
+    public int compareTo(Book o) {
+        return Integer.compare(this.getPublishedYear(), o.getPublishedYear());
     }
 }
